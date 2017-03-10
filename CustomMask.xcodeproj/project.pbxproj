@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		09ADCF0F1E72FC4600C7FD24 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ADCF0E1E72FC4600C7FD24 /* MainViewController.swift */; };
 		09ADCF111E72FC9B00C7FD24 /* dolphin.png in Resources */ = {isa = PBXBuildFile; fileRef = 09ADCF101E72FC9B00C7FD24 /* dolphin.png */; };
+		09B889D61E731E0A00F20E12 /* ic_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B889D51E731E0A00F20E12 /* ic_camera.png */; };
 		09D364331E720A1500F8F60E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D364321E720A1500F8F60E /* AppDelegate.swift */; };
 		09D364381E720A1500F8F60E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D364361E720A1500F8F60E /* Main.storyboard */; };
 		09D3643A1E720A1500F8F60E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D364391E720A1500F8F60E /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		04B9E25BD85E13A797677B6E /* Pods_CustomMaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomMaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09ADCF0E1E72FC4600C7FD24 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		09ADCF101E72FC9B00C7FD24 /* dolphin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dolphin.png; sourceTree = "<group>"; };
+		09B889D51E731E0A00F20E12 /* ic_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_camera.png; sourceTree = "<group>"; };
 		09D3642F1E720A1500F8F60E /* CustomMask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomMask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D364321E720A1500F8F60E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09D364371E720A1500F8F60E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				09D364391E720A1500F8F60E /* Assets.xcassets */,
+				09B889D51E731E0A00F20E12 /* ic_camera.png */,
 				09ADCF101E72FC9B00C7FD24 /* dolphin.png */,
 			);
 			name = Assets;
@@ -295,6 +298,7 @@
 			files = (
 				09ADCF111E72FC9B00C7FD24 /* dolphin.png in Resources */,
 				09D3643D1E720A1500F8F60E /* LaunchScreen.storyboard in Resources */,
+				09B889D61E731E0A00F20E12 /* ic_camera.png in Resources */,
 				09D3643A1E720A1500F8F60E /* Assets.xcassets in Resources */,
 				09D364381E720A1500F8F60E /* Main.storyboard in Resources */,
 			);

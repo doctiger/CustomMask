@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,18 +22,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dolphin.png" translatesAutoresizingMaskIntoConstraints="NO" id="LVn-DD-tsy">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BfP-wA-vwi">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dolphin.png" translatesAutoresizingMaskIntoConstraints="NO" id="LVn-DD-tsy">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="LVn-DD-tsy" firstAttribute="centerX" secondItem="BfP-wA-vwi" secondAttribute="centerX" id="0Q4-24-fbW"/>
+                                    <constraint firstItem="LVn-DD-tsy" firstAttribute="height" secondItem="BfP-wA-vwi" secondAttribute="height" id="L1d-Oc-dOC"/>
+                                    <constraint firstItem="LVn-DD-tsy" firstAttribute="centerY" secondItem="BfP-wA-vwi" secondAttribute="centerY" id="Y6i-gF-4Ze"/>
+                                    <constraint firstItem="LVn-DD-tsy" firstAttribute="width" secondItem="BfP-wA-vwi" secondAttribute="width" id="p9Q-tz-W8N"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiJ-Nn-fwK">
+                                <rect key="frame" x="16" y="598" width="65" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="XjA-bb-3TT"/>
+                                    <constraint firstAttribute="width" constant="65" id="qTQ-zn-E4A"/>
+                                </constraints>
+                                <state key="normal" image="ic_camera.png"/>
+                                <connections>
+                                    <action selector="didTapCaptureButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EC5-a7-jyZ"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="LVn-DD-tsy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="cha-bY-KJ3"/>
-                            <constraint firstItem="LVn-DD-tsy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nf8-74-YPM"/>
-                            <constraint firstItem="LVn-DD-tsy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="sPj-wz-Spa"/>
-                            <constraint firstItem="LVn-DD-tsy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xMT-1I-u9Y"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="PiJ-Nn-fwK" secondAttribute="leading" id="4g0-la-6vf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PiJ-Nn-fwK" secondAttribute="bottom" constant="20" id="ERj-px-416"/>
+                            <constraint firstItem="BfP-wA-vwi" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="agh-BH-oNu"/>
+                            <constraint firstItem="BfP-wA-vwi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="dmU-2f-R4v"/>
+                            <constraint firstItem="BfP-wA-vwi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edN-Vu-bcz"/>
+                            <constraint firstItem="BfP-wA-vwi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="quj-dV-Xzz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ivDolphin" destination="LVn-DD-tsy" id="4Am-8i-dv6"/>
+                        <outlet property="viewContainer" destination="BfP-wA-vwi" id="3bt-NC-JTA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,5 +70,6 @@
     </scenes>
     <resources>
         <image name="dolphin.png" width="1200" height="2400"/>
+        <image name="ic_camera.png" width="190" height="143"/>
     </resources>
 </document>
