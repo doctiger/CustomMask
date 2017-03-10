@@ -1,0 +1,18 @@
+.DS_Store
+Podfile.lock
+Pods
+/Target Support Files/
+.Trashes
+*.swp
+*.lock
+*~.nib
+DerivedData/
+build
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+*.xcworkspace
+!default.xcworkspace
+
+
+# About xcode 7 .gitignore
+# http://stackoverflow.com/questions/31752182/what-should-be-in-my-gitignore-for-xcode-7
