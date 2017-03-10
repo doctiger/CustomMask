@@ -631,11 +631,14 @@
 			baseConfigurationReference = F1DD00DB8B44E4692A07F42B /* Pods-CustomMask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = Q9CMR7969T;
 				INFOPLIST_FILE = CustomMask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmservice.CustomMask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "489959b4-6282-4826-8e65-75d878539c21";
+				PROVISIONING_PROFILE_SPECIFIER = CameraApp_Adhoc;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
